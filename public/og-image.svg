@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="og-g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <circle cx="1060" cy="90" r="260" fill="#e0e7ff"/>
+  <circle cx="140" cy="590" r="230" fill="#ecfdf5"/>
+  <rect x="80" y="80" width="120" height="120" rx="28" fill="url(#og-g)"/>
+  <text x="140" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="700" fill="#ffffff">AT</text>
+  <circle cx="184" cy="98" r="9" fill="#34d399" stroke="#ffffff" stroke-width="4"/>
+  <text x="80" y="318" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0f172a">Al-Trader</text>
+  <text x="82" y="382" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#475569">AI-Powered Trading Platform — Trade Smarter with AI</text>
+  <rect x="82" y="432" width="300" height="64" rx="32" fill="#4f46e5"/>
+  <text x="232" y="474" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" fill="#ffffff" text-anchor="middle">al-trader.org</text>
+</svg>
