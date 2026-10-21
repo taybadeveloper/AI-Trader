@@ -53,7 +53,7 @@ export default function HowItWorksPage() {
             {steps.map((step, index) => (
               <div
                 key={step.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+                className="card p-6"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-base font-bold text-white shadow-md shadow-indigo-200">
                   {String(index + 1).padStart(2, "0")}

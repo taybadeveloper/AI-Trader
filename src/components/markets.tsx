@@ -52,7 +52,7 @@ export default function Markets() {
           {markets.map((market) => (
             <div
               key={market.title}
-              className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+              className="card p-7"
             >
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                 {market.icon}

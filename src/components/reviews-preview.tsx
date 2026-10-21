@@ -15,7 +15,7 @@ export default function ReviewsPreview() {
           {reviews.slice(0, 3).map((review) => (
             <figure
               key={review.name}
-              className="flex flex-col rounded-2xl border border-slate-200 bg-slate-50/60 p-6"
+              className="card flex flex-col p-6"
             >
               <span className="text-amber-400">
                 <Stars />

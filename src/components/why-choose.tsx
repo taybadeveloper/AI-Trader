@@ -52,7 +52,7 @@ export default function WhyChoose() {
           <h3 className="font-display text-center text-2xl font-semibold tracking-tight text-slate-900">
             Manual trading vs Al-Trader
           </h3>
-          <div className="mt-8 rounded-2xl border border-slate-200 bg-white p-6 shadow-lg shadow-indigo-100/60">
+          <div className="card mt-8 p-6">
             <div className="grid grid-cols-2 items-center gap-4 pb-4">
               <p className="text-sm font-medium text-slate-500">Manual trading</p>
               <p className="flex items-center gap-2 text-sm font-semibold text-slate-900">

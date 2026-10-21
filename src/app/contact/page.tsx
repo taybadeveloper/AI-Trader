@@ -49,7 +49,7 @@ export default function ContactPage() {
                 href={card.href}
                 target={card.href.startsWith("http") ? "_blank" : undefined}
                 rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-colors hover:border-indigo-200 hover:bg-indigo-50/40"
+                className="card flex items-start gap-4 p-5 hover:bg-indigo-50/40"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                   {card.icon}

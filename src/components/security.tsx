@@ -52,7 +52,7 @@ export default function Security() {
         />
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div key={item.title} className="card p-6">
               <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                 {item.icon}
               </div>

@@ -35,7 +35,7 @@ export function SectionHeading({
       <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600">
         {eyebrow}
       </p>
-      <h2 className={`font-display mt-3 font-semibold leading-tight tracking-tight text-slate-900 ${titleCls}`}>
+      <h2 className={`font-display mt-3 text-balance font-semibold leading-tight tracking-tight text-slate-900 ${titleCls}`}>
         {title}
       </h2>
       {description && (
@@ -57,7 +57,7 @@ export function PrimaryLink({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition-colors hover:bg-indigo-700 ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-indigo-200 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-300 ${className}`}
     >
       {children}
     </Link>
@@ -76,7 +76,7 @@ export function SecondaryLink({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-indigo-300 hover:bg-indigo-50 hover:text-indigo-700 ${className}`}
+      className={`inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700 hover:shadow-md ${className}`}
     >
       {children}
     </Link>

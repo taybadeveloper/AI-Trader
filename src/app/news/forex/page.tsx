@@ -49,7 +49,7 @@ export default function ForexNewsPage() {
           {items.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm"
+              className="card p-6"
             >
               <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
                 {item.date}

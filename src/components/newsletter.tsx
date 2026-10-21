@@ -19,7 +19,7 @@ export default function Newsletter() {
   return (
     <section className="bg-slate-50 py-12 lg:py-16">
       <Container>
-        <div className="mx-auto max-w-4xl rounded-3xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-12">
+        <div className="card mx-auto max-w-4xl rounded-3xl px-6 py-10 sm:px-12">
           {status === "sent" ? (
             <div className="text-center">
               <span className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100">
@@ -60,7 +60,7 @@ export default function Newsletter() {
                   />
                   <button
                     type="submit"
-                    className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-indigo-700"
+                    className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-indigo-600 to-violet-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md shadow-indigo-200 transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-indigo-300"
                   >
                     Subscribe
                   </button>

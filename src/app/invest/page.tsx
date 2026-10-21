@@ -82,10 +82,10 @@ export default function InvestPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative flex flex-col rounded-2xl bg-white p-7 ${
+                className={`relative flex flex-col p-7 ${
                   plan.featured
-                    ? "border-2 border-indigo-600 shadow-lg shadow-indigo-100"
-                    : "border border-slate-200 shadow-sm"
+                    ? "rounded-2xl border-2 border-indigo-600 bg-white shadow-lg shadow-indigo-100"
+                    : "card"
                 }`}
               >
                 {plan.featured && (
@@ -136,7 +136,7 @@ export default function InvestPage() {
             {steps.map((step, index) => (
               <div
                 key={step.title}
-                className="rounded-2xl border border-slate-200 bg-slate-50/60 p-6 text-center"
+                className="card p-6 text-center"
               >
                 <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-base font-bold text-white shadow-md shadow-indigo-200">
                   {index + 1}

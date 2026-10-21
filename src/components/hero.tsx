@@ -14,6 +14,10 @@ export default function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-b from-indigo-50/70 via-white to-white">
       <div
         aria-hidden="true"
+        className="bg-grid pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(ellipse_at_center,black_35%,transparent_75%)]"
+      />
+      <div
+        aria-hidden="true"
         className="pointer-events-none absolute -left-28 -top-28 h-96 w-96 rounded-full bg-indigo-200/50 blur-3xl"
       />
       <div
@@ -22,7 +26,7 @@ export default function Hero() {
       />
       <Container className="relative grid items-center gap-14 py-12 lg:grid-cols-2 lg:py-16">
         <div className="text-center lg:text-left">
-          <h1 className="font-display mt-5 text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
+          <h1 className="font-display mt-5 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
             Trade Smarter with{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
               Al-Trader

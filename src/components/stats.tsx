@@ -62,7 +62,7 @@ export default function Stats() {
       <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-8 sm:px-6 lg:grid-cols-4 lg:px-8">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
-            <p className="font-display text-4xl font-bold tracking-tight text-indigo-600">
+            <p className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text font-display text-4xl font-bold tracking-tight text-transparent">
               <Counter value={stat.value} suffix={stat.suffix} decimals={stat.decimals ?? 0} />
             </p>
             <p className="mt-2 text-sm text-slate-600">{stat.label}</p>

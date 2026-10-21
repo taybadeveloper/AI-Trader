@@ -25,7 +25,7 @@ export default function BlogsPage() {
             <Link
               key={post.slug}
               href={`/blogs/${post.slug}`}
-              className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-0.5 hover:border-indigo-200 hover:shadow-md"
+              className="card group flex flex-col p-6"
             >
               <span className="inline-flex w-fit rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700">
                 {post.tag}

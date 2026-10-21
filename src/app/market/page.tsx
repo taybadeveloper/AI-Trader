@@ -70,7 +70,7 @@ export default function MarketPage() {
             {markets.map((market) => (
               <div
                 key={market.title}
-                className="rounded-2xl border border-slate-200 bg-white p-7 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
+                className="card p-7"
               >
                 <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                   {market.icon}
@@ -102,8 +102,8 @@ export default function MarketPage() {
           <div className="grid gap-8 rounded-3xl border border-slate-200 bg-slate-50/60 p-8 lg:grid-cols-2 lg:p-12">
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat) => (
-                <div key={stat.label} className="rounded-2xl border border-slate-200 bg-white p-5 text-center">
-                  <p className="font-display text-3xl font-bold tracking-tight text-indigo-600">
+                <div key={stat.label} className="card p-5 text-center">
+                  <p className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text font-display text-3xl font-bold tracking-tight text-transparent">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-slate-600">{stat.label}</p>
