@@ -103,7 +103,7 @@ export default function MarketPage() {
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="card p-5 text-center">
-                  <p className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text font-display text-3xl font-bold tracking-tight text-transparent">
+                  <p className="font-display text-3xl font-bold tracking-tight text-indigo-600">
                     {stat.value}
                   </p>
                   <p className="mt-1 text-sm text-slate-600">{stat.label}</p>
