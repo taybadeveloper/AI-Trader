@@ -75,19 +75,23 @@ const sections = [
 
 export default function TermsPage() {
   return (
-    <section className="bg-white py-10 lg:py-14">
-      <Container className="max-w-3xl">
-        <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600">
-          Legal
-        </p>
-        <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-slate-900">
-          Terms of Service
-        </h1>
-        <p className="mt-4 text-sm text-slate-500">
-          Last updated: October 21, 2026
-        </p>
-
-        <div className="mt-10 space-y-10">
+    <>
+      <section className="border-b-2 border-slate-200 bg-gradient-to-b from-indigo-50/70 via-white to-indigo-50/40 py-12 lg:py-16">
+        <Container className="max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600">
+            Legal
+          </p>
+          <h1 className="font-display mt-3 text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
+            Terms of Service
+          </h1>
+          <p className="mt-4 text-sm text-slate-500">
+            Last updated: October 21, 2026
+          </p>
+        </Container>
+      </section>
+      <section className="bg-white py-12 lg:py-16">
+        <Container className="max-w-3xl">
+          <div className="space-y-10">
           {sections.map((section) => (
             <div key={section.title}>
               <h2 className="font-display text-xl font-semibold text-slate-900">
@@ -101,7 +105,8 @@ export default function TermsPage() {
             </div>
           ))}
         </div>
-      </Container>
-    </section>
+        </Container>
+      </section>
+    </>
   );
 }
