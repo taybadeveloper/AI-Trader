@@ -68,6 +68,10 @@ export default function DisclaimerPage() {
           <h1 className="font-display mt-3 text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
             Disclaimer
           </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600">
+            Trading involves substantial risk. Please read this disclaimer
+            carefully before using the Al-Trader platform.
+          </p>
           <p className="mt-4 text-sm text-slate-500">
             Last updated: October 21, 2026
           </p>

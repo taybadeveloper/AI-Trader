@@ -84,6 +84,10 @@ export default function TermsPage() {
           <h1 className="font-display mt-3 text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
             Terms of Service
           </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600">
+            The terms that govern your use of the Al-Trader AI trading
+            platform.
+          </p>
           <p className="mt-4 text-sm text-slate-500">
             Last updated: October 21, 2026
           </p>

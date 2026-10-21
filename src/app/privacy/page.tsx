@@ -75,6 +75,10 @@ export default function PrivacyPage() {
           <h1 className="font-display mt-3 text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl">
             Privacy Policy
           </h1>
+          <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-slate-600">
+            How Al-Trader collects, uses and protects your personal data — in
+            plain English.
+          </p>
           <p className="mt-4 text-sm text-slate-500">
             Last updated: October 21, 2026
           </p>
