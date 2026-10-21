@@ -2,11 +2,11 @@ import Link from "next/link";
 import { Container, PrimaryLink, SecondaryLink } from "@/components/shared";
 
 const quickLinks = [
-  { label: "Features", href: "/features" },
-  { label: "How It Works", href: "/how-it-works" },
-  { label: "Reviews", href: "/reviews" },
-  { label: "FAQs", href: "/faqs" },
-  { label: "About", href: "/about" },
+  { label: "Home", href: "/" },
+  { label: "Invest", href: "/invest" },
+  { label: "Market", href: "/market" },
+  { label: "Blogs", href: "/blogs" },
+  { label: "Crypto News", href: "/news/crypto" },
   { label: "Contact", href: "/contact" },
 ];
 

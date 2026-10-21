@@ -29,10 +29,10 @@ export default function CTA() {
               Start Trading Free
             </Link>
             <Link
-              href="/features"
+              href="/invest"
               className="inline-flex items-center justify-center rounded-xl border border-white/40 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10"
             >
-              Explore Features
+              Explore Investment Plans
             </Link>
           </div>
         </div>

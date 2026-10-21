@@ -1,6 +1,6 @@
 import Stars from "./stars";
 import { reviews } from "@/lib/reviews";
-import { Container, SecondaryLink, SectionHeading } from "./shared";
+import { Container, SectionHeading } from "./shared";
 
 export default function ReviewsPreview() {
   return (
@@ -36,9 +36,6 @@ export default function ReviewsPreview() {
               </figcaption>
             </figure>
           ))}
-        </div>
-        <div className="mt-12 text-center">
-          <SecondaryLink href="/reviews">Read All Reviews</SecondaryLink>
         </div>
       </Container>
     </section>

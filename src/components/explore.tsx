@@ -3,51 +3,53 @@ import { Container, SectionHeading } from "./shared";
 
 const explore = [
   {
-    title: "Features",
-    href: "/features",
+    title: "Invest",
+    href: "/invest",
     description:
-      "AI signal engine, automated execution, smart risk management and bank-grade security — see everything Al-Trader offers.",
+      "AI-managed investment plans for every budget — set your risk level and let the Al-Trader engine work the markets.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <rect x="4" y="4" width="16" height="16" rx="2" />
-        <rect x="9" y="9" width="6" height="6" />
-        <path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2" />
+        <circle cx="8" cy="8" r="6" />
+        <path d="M18.09 10.37A6 6 0 1 1 10.34 18" />
+        <path d="M7 6h1v4" />
+        <path d="m16.71 13.88.7.71-2.82 2.82" />
       </svg>
     ),
   },
   {
-    title: "How It Works",
-    href: "/how-it-works",
+    title: "Market",
+    href: "/market",
     description:
-      "From signup to your first AI trade in minutes. See the four simple steps to get started with Al-Trader.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M21 12a9 9 0 1 1-9-9" />
-        <path d="M21 3v6h-6" />
-      </svg>
-    ),
-  },
-  {
-    title: "Reviews",
-    href: "/reviews",
-    description:
-      "See what forex, crypto and stock traders around the world say about the Al-Trader AI trading platform.",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-      </svg>
-    ),
-  },
-  {
-    title: "FAQs",
-    href: "/faqs",
-    description:
-      "Answers to the most common questions about Al-Trader — exchanges, security, subscriptions and more.",
+      "Forex, crypto and stocks — every major market covered around the clock by one Al-Trader AI engine.",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <circle cx="12" cy="12" r="10" />
-        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-        <path d="M12 17h.01" />
+        <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+        <path d="M2 12h20" />
+      </svg>
+    ),
+  },
+  {
+    title: "Blogs",
+    href: "/blogs",
+    description:
+      "Investing guides, market comparisons and trading tips from the Al-Trader team.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+      </svg>
+    ),
+  },
+  {
+    title: "News",
+    href: "/news/crypto",
+    description:
+      "Crypto, forex and stock news — stay ahead of the stories moving the markets.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2" />
+        <path d="M18 14h-8M15 18h-5M10 6h8v4h-8V6Z" />
       </svg>
     ),
   },
@@ -60,9 +62,9 @@ export default function Explore() {
         <SectionHeading
           eyebrow="Explore Al-Trader"
           title="Everything you need to know, in one place"
-          description="Learn what Al-Trader can do, how it works, and what traders think — before you get started."
+          description="Learn what Al-Trader can do, how it works, and what is moving the markets — before you get started."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {explore.map((item) => (
             <Link
               key={item.href}

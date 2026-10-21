@@ -22,30 +22,6 @@ const cards = [
       </svg>
     ),
   },
-  {
-    title: "Telegram",
-    value: "@altrader_support",
-    href: "https://t.me/altrader_support",
-    note: "Fastest for quick questions",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Partnerships",
-    value: "partners@al-trader.org",
-    href: "mailto:partners@al-trader.org",
-    note: "Brokers, exchanges & affiliates",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-        <circle cx="9" cy="7" r="4" />
-        <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
-      </svg>
-    ),
-  },
 ];
 
 export default function ContactPage() {

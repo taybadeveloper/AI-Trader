@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { faqs } from "@/lib/faqs";
-import { SecondaryLink } from "./shared";
 
 export default function FaqList({ preview = false }: { preview?: boolean }) {
   const [open, setOpen] = useState<number | null>(0);
@@ -53,12 +52,6 @@ export default function FaqList({ preview = false }: { preview?: boolean }) {
           );
         })}
       </div>
-
-      {preview && (
-        <div className="mx-auto mt-10 max-w-3xl text-center">
-          <SecondaryLink href="/faqs">See All FAQs</SecondaryLink>
-        </div>
-      )}
     </div>
   );
 }
