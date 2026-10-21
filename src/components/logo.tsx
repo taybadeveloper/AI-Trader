@@ -8,18 +8,19 @@ export default function Logo({ className = "h-8 w-8" }: { className?: string }) 
         </linearGradient>
       </defs>
       <rect width="64" height="64" rx="14" fill="url(#al-logo-grad)" />
-      <text
-        x="32"
-        y="42"
-        textAnchor="middle"
-        fontSize="26"
-        fontWeight="700"
-        fill="#ffffff"
-        style={{ fontFamily: "var(--font-poppins), Arial, Helvetica, sans-serif" }}
-      >
-        AT
-      </text>
-      <circle cx="50" cy="14" r="5" fill="#34d399" stroke="#ffffff" strokeWidth="2" />
+      {/* Emerald candlestick */}
+      <line x1="18" y1="36" x2="18" y2="22" stroke="#34d399" strokeWidth="2.5" strokeLinecap="round" />
+      <rect x="13.5" y="26" width="9" height="8" rx="1.5" fill="#34d399" />
+      {/* White rising trend arrow */}
+      <path
+        d="M10 48 L28 36 L35 40 L45 24"
+        fill="none"
+        stroke="#ffffff"
+        strokeWidth="4.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M45 24 L53 18 L53 30 Z" fill="#ffffff" />
     </svg>
   );
 }
