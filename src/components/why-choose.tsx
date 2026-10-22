@@ -1,4 +1,3 @@
-import DashboardMockup from "./dashboard-mockup";
 import { Container } from "./shared";
 
 const benefits = [
@@ -45,7 +44,20 @@ export default function WhyChoose() {
               ))}
             </ul>
           </div>
-          <DashboardMockup />
+          <div className="relative">
+            <div
+              aria-hidden="true"
+              className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-indigo-100 via-white to-emerald-50"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/why-choose.webp"
+              alt="Al-Trader AI trading platform dashboard"
+              width={1548}
+              height={1016}
+              className="relative w-full rounded-2xl border border-slate-200 shadow-xl shadow-indigo-100"
+            />
+          </div>
         </div>
 
         <div className="mx-auto mt-16 max-w-3xl">
