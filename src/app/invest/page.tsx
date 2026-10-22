@@ -78,7 +78,12 @@ export default function InvestPage() {
             description="Choose an AI-managed investment plan, set your risk level, and let the Al-Trader engine work the markets for you — around the clock."
             size="lg"
           />
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 lg:py-16">
+        <Container>
+          <div className="grid gap-6 lg:grid-cols-3">
             {plans.map((plan) => (
               <div
                 key={plan.name}
@@ -126,7 +131,7 @@ export default function InvestPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-slate-50 py-12 lg:py-16">
         <Container>
           <SectionHeading
             eyebrow="Getting Started"
@@ -134,10 +139,7 @@ export default function InvestPage() {
           />
           <div className="mt-12 grid gap-6 md:grid-cols-3">
             {steps.map((step, index) => (
-              <div
-                key={step.title}
-                className="card p-6 text-center"
-              >
+              <div key={step.title} className="card p-6 text-center">
                 <span className="mx-auto flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-base font-bold text-white shadow-md shadow-indigo-200">
                   {index + 1}
                 </span>
@@ -150,7 +152,7 @@ export default function InvestPage() {
               </div>
             ))}
           </div>
-          <div className="mx-auto mt-10 flex max-w-3xl items-start gap-4 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <div className="mx-auto mt-10 flex max-w-3xl items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6">
             <svg viewBox="0 0 24 24" className="mt-0.5 h-6 w-6 shrink-0 text-indigo-600" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
             </svg>

@@ -49,12 +49,14 @@ export default function HowItWorksPage() {
             description="Getting started with Al-Trader takes less time than reading a market report."
             size="lg"
           />
-          <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 lg:py-16">
+        <Container>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (
-              <div
-                key={step.title}
-                className="card p-6"
-              >
+              <div key={step.title} className="card p-6">
                 <span className="flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-base font-bold text-white shadow-md shadow-indigo-200">
                   {String(index + 1).padStart(2, "0")}
                 </span>
@@ -68,7 +70,7 @@ export default function HowItWorksPage() {
             ))}
           </div>
 
-          <div className="mt-16 grid items-center gap-8 rounded-3xl border border-slate-200 bg-slate-50/60 p-8 lg:grid-cols-2 lg:p-12">
+          <div className="mt-14 grid items-center gap-8 rounded-3xl border border-slate-200 bg-slate-50/60 p-8 lg:grid-cols-2 lg:p-12">
             <div>
               <h2 className="font-display text-2xl font-semibold tracking-tight text-slate-900">
                 What you need to get started

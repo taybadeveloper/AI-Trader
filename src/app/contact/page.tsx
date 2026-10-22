@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import SignupForm from "@/components/signup-form";
-import { Container } from "@/components/shared";
+import { Container, SectionHeading } from "@/components/shared";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -26,50 +26,50 @@ const cards = [
 
 export default function ContactPage() {
   return (
-    <section className="border-b-2 border-slate-200 bg-gradient-to-b from-indigo-50/70 via-white to-indigo-50/40 py-12 lg:py-16">
-      <Container>
-        <div className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-indigo-600">
-            Contact
-          </p>
-          <h1 className="font-display mt-3 text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">
-            Get in touch with Al-Trader
-          </h1>
-          <p className="mt-4 text-lg leading-relaxed text-slate-600">
-            Questions about the platform, your account or a partnership? The
-            Al-Trader team is here to help.
-          </p>
-        </div>
+    <>
+      <section className="border-b-2 border-slate-200 bg-gradient-to-b from-indigo-50/70 via-white to-indigo-50/40 py-12 lg:py-16">
+        <Container>
+          <SectionHeading
+            eyebrow="Contact"
+            title="Get in touch with Al-Trader"
+            description="Questions about the platform, your account or a partnership? The Al-Trader team is here to help."
+            size="lg"
+          />
+        </Container>
+      </section>
 
-        <div className="mt-14 grid gap-10 lg:grid-cols-5">
-          <div className="space-y-4 lg:col-span-2">
-            {cards.map((card) => (
-              <a
-                key={card.title}
-                href={card.href}
-                target={card.href.startsWith("http") ? "_blank" : undefined}
-                rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="card flex items-start gap-4 p-5 hover:bg-indigo-50/40"
-              >
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
-                  {card.icon}
-                </span>
-                <span>
-                  <span className="block text-sm font-medium text-slate-500">{card.title}</span>
-                  <span className="block font-display text-base font-semibold text-slate-900">
-                    {card.value}
+      <section className="bg-white py-12 lg:py-16">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-5">
+            <div className="space-y-4 lg:col-span-2">
+              {cards.map((card) => (
+                <a
+                  key={card.title}
+                  href={card.href}
+                  target={card.href.startsWith("http") ? "_blank" : undefined}
+                  rel={card.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="card flex items-start gap-4 p-5 hover:bg-indigo-50/40"
+                >
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+                    {card.icon}
                   </span>
-                  <span className="mt-0.5 block text-xs text-slate-500">{card.note}</span>
-                </span>
-              </a>
-            ))}
-          </div>
+                  <span>
+                    <span className="block text-sm font-medium text-slate-500">{card.title}</span>
+                    <span className="block font-display text-base font-semibold text-slate-900">
+                      {card.value}
+                    </span>
+                    <span className="mt-0.5 block text-xs text-slate-500">{card.note}</span>
+                  </span>
+                </a>
+              ))}
+            </div>
 
-          <div className="lg:col-span-3">
-            <SignupForm />
+            <div className="lg:col-span-3">
+              <SignupForm />
+            </div>
           </div>
-        </div>
-      </Container>
-    </section>
+        </Container>
+      </section>
+    </>
   );
 }

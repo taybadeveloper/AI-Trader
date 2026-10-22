@@ -37,33 +37,37 @@ const items = [
 
 export default function ForexNewsPage() {
   return (
-    <section className="border-b-2 border-slate-200 bg-gradient-to-b from-indigo-50/70 via-white to-indigo-50/40 py-12 lg:py-16">
-      <Container>
-        <SectionHeading
-          eyebrow="News"
-          title="Forex News"
-          description="Currency market updates and the central bank stories moving forex prices."
-          size="lg"
-        />
-        <div className="mx-auto mt-12 max-w-3xl space-y-5">
-          {items.map((item) => (
-            <article
-              key={item.title}
-              className="card p-6"
-            >
-              <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
-                {item.date}
-              </span>
-              <h2 className="font-display mt-3 text-lg font-semibold text-slate-900">
-                {item.title}
-              </h2>
-              <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                {item.summary}
-              </p>
-            </article>
-          ))}
-        </div>
-      </Container>
-    </section>
+    <>
+      <section className="border-b-2 border-slate-200 bg-gradient-to-b from-indigo-50/70 via-white to-indigo-50/40 py-12 lg:py-16">
+        <Container>
+          <SectionHeading
+            eyebrow="News"
+            title="Forex News"
+            description="Currency market updates and the central bank stories moving forex prices."
+            size="lg"
+          />
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 lg:py-16">
+        <Container>
+          <div className="mx-auto max-w-3xl space-y-5">
+            {items.map((item) => (
+              <article key={item.title} className="card p-6">
+                <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
+                  {item.date}
+                </span>
+                <h2 className="font-display mt-3 text-lg font-semibold text-slate-900">
+                  {item.title}
+                </h2>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {item.summary}
+                </p>
+              </article>
+            ))}
+          </div>
+        </Container>
+      </section>
+    </>
   );
 }

@@ -66,12 +66,14 @@ export default function MarketPage() {
             description="The Al-Trader AI engine covers forex, crypto and stocks — so your whole portfolio lives in one place."
             size="lg"
           />
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 lg:py-16">
+        <Container>
+          <div className="grid gap-6 md:grid-cols-3">
             {markets.map((market) => (
-              <div
-                key={market.title}
-                className="card p-7"
-              >
+              <div key={market.title} className="card p-7">
                 <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                   {market.icon}
                 </div>
@@ -94,12 +96,8 @@ export default function MarketPage() {
               </div>
             ))}
           </div>
-        </Container>
-      </section>
 
-      <section className="bg-white py-12 lg:py-16">
-        <Container>
-          <div className="grid gap-8 rounded-3xl border border-slate-200 bg-slate-50/60 p-8 lg:grid-cols-2 lg:p-12">
+          <div className="mt-12 grid gap-8 rounded-3xl border border-slate-200 bg-slate-50/60 p-8 lg:grid-cols-2 lg:p-12">
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat) => (
                 <div key={stat.label} className="card p-5 text-center">
