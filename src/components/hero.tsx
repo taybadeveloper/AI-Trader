@@ -24,7 +24,7 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-100/60 blur-3xl"
       />
-      <Container className="relative grid items-center gap-14 py-12 lg:grid-cols-2 lg:py-16">
+      <Container className="relative grid items-center gap-14 pb-12 pt-6 lg:grid-cols-2 lg:py-16">
         <div className="text-center lg:text-left">
           <h1 className="font-display mt-5 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
             Trade Smarter with{" "}
