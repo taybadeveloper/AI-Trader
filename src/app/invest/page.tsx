@@ -87,11 +87,7 @@ export default function InvestPage() {
             {plans.map((plan) => (
               <div
                 key={plan.name}
-                className={`relative flex flex-col p-7 ${
-                  plan.featured
-                    ? "rounded-2xl border-2 border-indigo-600 bg-white shadow-lg shadow-indigo-100"
-                    : "card"
-                }`}
+                className="card relative flex flex-col rounded-2xl border-2 border-indigo-600 p-7 shadow-lg shadow-indigo-100"
               >
                 {plan.featured && (
                   <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-indigo-600 px-4 py-1 text-xs font-semibold text-white">
