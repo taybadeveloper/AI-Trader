@@ -90,8 +90,8 @@ export default function DisclaimerPage() {
                 {section.title}
               </h2>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-slate-600">
-                {section.body.map((item) => (
-                  <li key={item}>{item}</li>
+                {section.body.map((item, index) => (
+                  <li key={index}>{item}</li>
                 ))}
               </ul>
             </div>
