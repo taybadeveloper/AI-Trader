@@ -52,7 +52,11 @@ const sections = [
   {
     title: "7. Contact",
     body: [
-      "Questions about this disclaimer? Contact us at support@al-trader.org or via the Al-Trader contact page.",
+      <>
+        Questions about this disclaimer? Contact us at{" "}
+        <span className="font-semibold text-slate-900">support@al-trader.org</span>{" "}
+        or via the Al-Trader contact page.
+      </>,
     ],
   },
 ];

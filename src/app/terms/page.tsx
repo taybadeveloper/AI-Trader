@@ -68,7 +68,10 @@ const sections = [
   {
     title: "10. Contact",
     body: [
-      "Questions about these terms? Contact us at support@al-trader.org.",
+      <>
+        Questions about these terms? Contact us at{" "}
+        <span className="font-semibold text-slate-900">support@al-trader.org</span>.
+      </>,
     ],
   },
 ];

@@ -59,7 +59,11 @@ const sections = [
   {
     title: "8. Contact",
     body: [
-      "Questions about this policy? Contact us at privacy@al-trader.org or via the Al-Trader contact page.",
+      <>
+        Questions about this policy? Contact us at{" "}
+        <span className="font-semibold text-slate-900">privacy@al-trader.org</span>{" "}
+        or via the Al-Trader contact page.
+      </>,
     ],
   },
 ];
