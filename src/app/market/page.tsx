@@ -66,7 +66,7 @@ export default function MarketPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container>
           <div className="grid gap-6 md:grid-cols-3">
             {markets.map((market) => (

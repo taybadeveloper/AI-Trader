@@ -38,7 +38,7 @@ export default function ContactPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container>
           <div className="grid gap-10 lg:grid-cols-5">
             <div className="space-y-4 lg:col-span-2">

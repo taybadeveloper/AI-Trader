@@ -52,7 +52,7 @@ export default function HowItWorksPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {steps.map((step, index) => (

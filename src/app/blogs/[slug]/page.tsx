@@ -60,7 +60,7 @@ export default async function BlogPostPage({
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container className="max-w-3xl">
           <div>
             {post.blocks.map((block, index) => {

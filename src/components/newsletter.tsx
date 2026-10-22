@@ -17,7 +17,7 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="bg-slate-50 py-12 lg:py-16">
+    <section className="bg-slate-50 py-12 lg:py-20">
       <Container>
         <div className="card mx-auto max-w-4xl rounded-3xl px-6 py-10 sm:px-12">
           {status === "sent" ? (

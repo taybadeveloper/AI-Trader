@@ -43,7 +43,7 @@ const items = [
 
 export default function Security() {
   return (
-    <section className="bg-indigo-50/50 py-12 lg:py-16">
+    <section className="bg-indigo-50/50 py-12 lg:py-20">
       <Container>
         <SectionHeading
           eyebrow="Security & Trust"

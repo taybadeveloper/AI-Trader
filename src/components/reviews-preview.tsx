@@ -4,7 +4,7 @@ import { Container, SectionHeading } from "./shared";
 
 export default function ReviewsPreview() {
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-20">
       <Container>
         <SectionHeading
           eyebrow="Reviews"

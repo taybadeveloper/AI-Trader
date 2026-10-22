@@ -49,7 +49,7 @@ export default function StockNewsPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container>
           <div className="mx-auto max-w-3xl space-y-5">
             {items.map((item) => (

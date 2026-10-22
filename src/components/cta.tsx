@@ -3,7 +3,7 @@ import { Container } from "./shared";
 
 export default function CTA() {
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-20">
       <Container>
         <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-600 to-violet-600 px-6 py-12 text-center sm:px-16">
           <div

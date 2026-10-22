@@ -24,7 +24,7 @@ export default function Home() {
       <Explore />
       <Newsletter />
       <CTA />
-      <section className="bg-slate-50 py-12 lg:py-16">
+      <section className="bg-slate-50 py-12 lg:py-20">
         <Container>
           <SectionHeading
             eyebrow="FAQs"

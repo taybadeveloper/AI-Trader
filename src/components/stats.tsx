@@ -59,7 +59,7 @@ function Counter({
 export default function Stats() {
   return (
     <section className="border-y border-slate-200 bg-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-8 sm:px-6 lg:grid-cols-4 lg:px-8">
+      <div className="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 py-8 sm:px-6 lg:py-12 lg:grid-cols-4 lg:px-8">
         {stats.map((stat) => (
           <div key={stat.label} className="text-center">
             <p className="font-display text-4xl font-bold tracking-tight text-indigo-600">

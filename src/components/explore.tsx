@@ -57,7 +57,7 @@ const explore = [
 
 export default function Explore() {
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-20">
       <Container>
         <SectionHeading
           eyebrow="Explore Al-Trader"

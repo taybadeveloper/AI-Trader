@@ -18,7 +18,7 @@ const comparison = [
 
 export default function WhyChoose() {
   return (
-    <section className="bg-white py-12 lg:py-16">
+    <section className="bg-white py-12 lg:py-20">
       <Container>
         <div className="grid items-center gap-14 lg:grid-cols-2">
           <div className="text-center lg:text-left">

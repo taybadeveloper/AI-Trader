@@ -81,7 +81,7 @@ export default function InvestPage() {
         </Container>
       </section>
 
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container>
           <div className="grid gap-6 lg:grid-cols-3">
             {plans.map((plan) => (
@@ -123,7 +123,7 @@ export default function InvestPage() {
         </Container>
       </section>
 
-      <section className="bg-slate-50 py-12 lg:py-16">
+      <section className="bg-slate-50 py-12 lg:py-20">
         <Container>
           <SectionHeading
             eyebrow="Getting Started"

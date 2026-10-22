@@ -77,7 +77,7 @@ export default function DisclaimerPage() {
           </p>
         </Container>
       </section>
-      <section className="bg-white py-12 lg:py-16">
+      <section className="bg-white py-12 lg:py-20">
         <Container className="max-w-3xl">
           <div className="space-y-10">
           {sections.map((section) => (
