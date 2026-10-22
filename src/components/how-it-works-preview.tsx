@@ -30,18 +30,13 @@ export default function HowItWorksPreview() {
         />
 
         <div className="relative mt-14">
-          {/* Vertical connector line (mobile & tablet) */}
+          {/* Horizontal connector line */}
           <div
             aria-hidden="true"
-            className="absolute bottom-6 left-1/2 top-6 w-px -translate-x-1/2 border-l-2 border-dashed border-indigo-200 lg:hidden"
-          />
-          {/* Horizontal connector line (desktop) */}
-          <div
-            aria-hidden="true"
-            className="absolute left-[12.5%] right-[12.5%] top-6 hidden border-t-2 border-dashed border-indigo-200 lg:block"
+            className="absolute left-[12.5%] right-[12.5%] top-6 hidden border-t-2 border-dashed border-indigo-200 sm:block"
           />
 
-          <ol className="grid gap-10 lg:grid-cols-4 lg:gap-8">
+          <ol className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {steps.map((step, index) => (
               <li
                 key={step.title}
