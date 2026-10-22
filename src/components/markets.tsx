@@ -45,9 +45,9 @@ export default function Markets() {
           title="One AI engine. Every major market."
           description="The Al-Trader signal engine works across forex, crypto and stocks — so your whole portfolio is covered by one platform."
         />
-        <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
+        <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-slate-200">
           {markets.map((market) => (
-            <div key={market.title} className="text-center">
+            <div key={market.title} className="text-center md:px-8 md:first:pl-0 md:last:pr-0">
               <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white text-indigo-600 shadow-sm">
                 {market.icon}
               </div>

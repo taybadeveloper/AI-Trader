@@ -64,9 +64,9 @@ export default function Explore() {
           title="Everything you need to know, in one place"
           description="Learn what Al-Trader can do, how it works, and what is moving the markets — before you get started."
         />
-        <div className="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-slate-200">
           {explore.map((item) => (
-            <Link key={item.href} href={item.href} className="group block text-center">
+            <Link key={item.href} href={item.href} className="group block text-center lg:px-8 lg:first:pl-0 lg:last:pr-0">
               <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100">
                 {item.icon}
               </div>

@@ -11,9 +11,9 @@ export default function ReviewsPreview() {
           title="Traders love Al-Trader"
           description="From first-time traders to experienced investors — here is what the Al-Trader community says."
         />
-        <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
+        <div className="mt-12 grid gap-10 md:grid-cols-3 md:gap-0 md:divide-x md:divide-slate-200">
           {reviews.slice(0, 3).map((review) => (
-            <figure key={review.name} className="flex flex-col items-center text-center">
+            <figure key={review.name} className="flex flex-col items-center text-center md:px-8 md:first:pl-0 md:last:pr-0">
               <span className="text-amber-400">
                 <Stars />
               </span>
