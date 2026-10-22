@@ -1,18 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
-  <defs>
-    <linearGradient id="og-g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#4f46e5"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-    </linearGradient>
-  </defs>
   <rect width="1200" height="630" fill="#ffffff"/>
   <circle cx="1060" cy="90" r="260" fill="#e0e7ff"/>
   <circle cx="140" cy="590" r="230" fill="#ecfdf5"/>
-  <rect x="80" y="80" width="120" height="120" rx="28" fill="url(#og-g)"/>
-  <line x1="116" y1="152" x2="116" y2="124" stroke="#34d399" stroke-width="5" stroke-linecap="round"/>
-  <rect x="107" y="132" width="18" height="16" rx="3" fill="#34d399"/>
-  <path d="M100 176 L136 152 L150 160 L170 128" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M170 128 L186 116 L186 140 Z" fill="#ffffff"/>
+  <rect x="80" y="80" width="120" height="120" rx="28" fill="#4f46e5"/>
+  <circle cx="144" cy="98" r="7" fill="#34d399" stroke="#ffffff" stroke-width="3"/>
+  <path d="M112 176 L144 108 L176 176 L161 176 L144 142 L127 176 Z" fill="#ffffff" fill-rule="evenodd"/>
   <text x="80" y="318" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0f172a">Al-Trader</text>
   <text x="82" y="382" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#475569">AI-Powered Trading Platform — Trade Smarter with AI</text>
   <rect x="82" y="432" width="300" height="64" rx="32" fill="#4f46e5"/>
