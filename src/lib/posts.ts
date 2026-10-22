@@ -8,6 +8,7 @@ export interface Post {
   dateISO: string;
   readTime: string;
   tag: string;
+  cover: string;
   blocks: PostBlock[];
 }
 
@@ -15,6 +16,7 @@ export const posts: Post[] = [
   {
     slug: "how-ai-is-changing-the-way-we-invest",
     title: "How AI Is Changing the Way We Invest",
+    cover: "/blog/ai-investing.svg",
     description:
       "Artificial intelligence is reshaping investing — from signal generation to risk management. Here is how the Al-Trader engine fits into the picture.",
     date: "Sep 30, 2026",
@@ -53,6 +55,7 @@ export const posts: Post[] = [
   {
     slug: "forex-vs-crypto-vs-stocks",
     title: "Forex vs Crypto vs Stocks: Which Market Is Right for You?",
+    cover: "/blog/markets.svg",
     description:
       "Forex, crypto and stocks each have their own rhythm. Here is an honest comparison to help you choose where to start — or how to diversify across all three.",
     date: "Oct 7, 2026",
@@ -92,6 +95,7 @@ export const posts: Post[] = [
   {
     slug: "trading-mistakes-ai-helps-you-avoid",
     title: "5 Trading Mistakes Al-Trader Helps You Avoid",
+    cover: "/blog/mistakes.svg",
     description:
       "Most trading losses come from the same five mistakes. Here is how AI-driven discipline keeps your account safer.",
     date: "Oct 15, 2026",
@@ -130,6 +134,7 @@ export const posts: Post[] = [
   {
     slug: "how-al-trader-ai-signal-engine-works",
     title: "How the Al-Trader AI Signal Engine Works",
+    cover: "/blog/signal-engine.svg",
     description:
       "Ever wondered what happens between market data and a trade signal? Here is a simple breakdown of the Al-Trader signal engine.",
     date: "Oct 22, 2026",
@@ -164,6 +169,7 @@ export const posts: Post[] = [
   {
     slug: "risk-management-basics-every-trader-should-know",
     title: "Risk Management Basics Every Trader Should Know",
+    cover: "/blog/risk.svg",
     description:
       "Risk management is the difference between a hobby and a career. These are the fundamentals behind every Al-Trader trade.",
     date: "Oct 29, 2026",
@@ -202,6 +208,7 @@ export const posts: Post[] = [
   {
     slug: "how-to-start-trading-with-ai-beginners-roadmap",
     title: "How to Start Trading with AI: A Beginner's Roadmap",
+    cover: "/blog/roadmap.svg",
     description:
       "New to trading and curious about AI? Follow this step-by-step roadmap to your first Al-Trader trade.",
     date: "Nov 5, 2026",

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="120" r="210" fill="#c7d2fe" opacity="0.4"/>
+  <circle cx="1060" cy="540" r="250" fill="#d1fae5" opacity="0.5"/>
+  <!-- Winding road -->
+  <path d="M130 500 C 280 500 280 360 430 360 S 580 500 730 500 C 880 500 880 300 1040 300" fill="none" stroke="#cbd5e1" stroke-width="28" stroke-linecap="round"/>
+  <path d="M130 500 C 280 500 280 360 430 360 S 580 500 730 500 C 880 500 880 300 1040 300" fill="none" stroke="#ffffff" stroke-width="6" stroke-dasharray="20 24" stroke-linecap="round"/>
+  <!-- Checkpoints -->
+  <circle cx="280" cy="455" r="24" fill="#4f46e5" stroke="#ffffff" stroke-width="7"/>
+  <circle cx="560" cy="465" r="24" fill="#4f46e5" stroke="#ffffff" stroke-width="7"/>
+  <circle cx="840" cy="430" r="24" fill="#4f46e5" stroke="#ffffff" stroke-width="7"/>
+  <!-- Flag -->
+  <path d="M1040 300 V220" stroke="#0f172a" stroke-width="10" stroke-linecap="round"/>
+  <path d="M1040 220 L1100 245 L1040 270 Z" fill="#34d399" stroke="#34d399" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="150" cy="300" r="10" fill="#34d399" opacity="0.6"/>
+  <circle cx="1090" cy="110" r="10" fill="#4f46e5" opacity="0.5"/>
+</svg>

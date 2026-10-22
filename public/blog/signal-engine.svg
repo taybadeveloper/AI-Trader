@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#eef2ff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="540" r="230" fill="#c7d2fe" opacity="0.35"/>
+  <circle cx="1080" cy="120" r="220" fill="#d1fae5" opacity="0.45"/>
+  <!-- Network lines -->
+  <path d="M280 380 L480 240 L700 330 L880 200 L1020 340" fill="none" stroke="#a5b4fc" stroke-width="8" stroke-linecap="round"/>
+  <!-- Nodes -->
+  <circle cx="280" cy="380" r="34" fill="#4f46e5" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="480" cy="240" r="34" fill="#6366f1" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="700" cy="330" r="34" fill="#7c3aed" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="880" cy="200" r="34" fill="#34d399" stroke="#ffffff" stroke-width="8"/>
+  <circle cx="1020" cy="340" r="26" fill="#a5b4fc" stroke="#ffffff" stroke-width="8"/>
+  <!-- Signal arcs -->
+  <path d="M760 480 a120 120 0 0 1 160 0" fill="none" stroke="#94a3b8" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+  <path d="M790 480 a90 90 0 0 1 100 0" fill="none" stroke="#4f46e5" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="890" cy="480" r="12" fill="#34d399" stroke="#ffffff" stroke-width="6"/>
+  <path d="M230 200 l30 30 M260 200 l-30 30" stroke="#4f46e5" stroke-width="10" stroke-linecap="round" opacity="0.5"/>
+</svg>

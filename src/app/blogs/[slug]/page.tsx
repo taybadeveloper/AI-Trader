@@ -62,7 +62,15 @@ export default async function BlogPostPage({
 
       <section className="bg-white py-12 lg:py-20">
         <Container className="max-w-3xl">
-          <div>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={post.cover}
+            alt={`${post.title} — cover illustration`}
+            width={1200}
+            height={630}
+            className="w-full rounded-2xl border border-slate-200 shadow-lg shadow-indigo-100"
+          />
+          <div className="mt-10">
             {post.blocks.map((block, index) => {
               if ("h2" in block) {
                 return (
