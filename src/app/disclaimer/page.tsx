@@ -82,7 +82,7 @@ export default function DisclaimerPage() {
           <div className="space-y-10">
           {sections.map((section) => (
             <div key={section.title}>
-              <h2 className="font-display text-xl font-semibold text-slate-900">
+              <h2 className="font-display text-2xl font-semibold text-slate-900">
                 {section.title}
               </h2>
               <ul className="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-slate-600">
