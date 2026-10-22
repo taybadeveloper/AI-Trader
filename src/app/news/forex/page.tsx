@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import NewsList from "@/components/news-list";
 import { Container, SectionHeading } from "@/components/shared";
 
 export const metadata: Metadata = {
@@ -48,26 +49,12 @@ export default function ForexNewsPage() {
           />
         </Container>
       </section>
-
-      <section className="bg-white py-12 lg:py-20">
-        <Container>
-          <div className="mx-auto max-w-3xl space-y-5">
-            {items.map((item) => (
-              <article key={item.title} className="card p-6">
-                <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
-                  {item.date}
-                </span>
-                <h2 className="font-display mt-3 text-lg font-semibold text-slate-900">
-                  {item.title}
-                </h2>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">
-                  {item.summary}
-                </p>
-              </article>
-            ))}
-          </div>
-        </Container>
-      </section>
+      <NewsList
+        items={items}
+        active="/news/forex"
+        image="/news/news-forex.svg"
+        imageAlt="Forex globe and exchange arrows illustration"
+      />
     </>
   );
 }
