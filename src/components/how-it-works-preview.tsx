@@ -30,10 +30,10 @@ export default function HowItWorksPreview() {
         />
 
         <div className="relative mt-14">
-          {/* Vertical connector line (mobile) */}
+          {/* Vertical connector line (mobile & tablet) */}
           <div
             aria-hidden="true"
-            className="absolute bottom-6 left-6 top-6 border-l-2 border-dashed border-indigo-200 lg:hidden"
+            className="absolute bottom-6 left-1/2 top-6 w-px -translate-x-1/2 border-l-2 border-dashed border-indigo-200 lg:hidden"
           />
           {/* Horizontal connector line (desktop) */}
           <div
@@ -45,12 +45,12 @@ export default function HowItWorksPreview() {
             {steps.map((step, index) => (
               <li
                 key={step.title}
-                className="relative flex gap-5 lg:flex-col lg:items-center lg:gap-0 lg:text-center"
+                className="relative flex flex-col items-center gap-0 text-center"
               >
-                <span className="relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-lg font-bold text-white shadow-lg shadow-indigo-200 ring-4 ring-white lg:mx-auto">
+                <span className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 font-display text-lg font-bold text-white shadow-lg shadow-indigo-200 ring-4 ring-white">
                   {index + 1}
                 </span>
-                <div className="lg:mt-5">
+                <div className="mt-5">
                   <h3 className="font-display text-lg font-semibold text-slate-900">
                     {step.title}
                   </h3>
