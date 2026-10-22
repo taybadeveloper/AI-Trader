@@ -61,7 +61,7 @@ export default function WhyChoose() {
         </div>
 
         <div className="mx-auto mt-16 max-w-3xl">
-          <h3 className="font-display text-center text-2xl font-semibold tracking-tight text-slate-900">
+          <h3 className="font-display text-center text-3xl font-semibold tracking-tight text-slate-900">
             Manual trading vs Al-Trader
           </h3>
           <div className="card mt-8 p-6">
