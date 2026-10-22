@@ -64,23 +64,19 @@ export default function Explore() {
           title="Everything you need to know, in one place"
           description="Learn what Al-Trader can do, how it works, and what is moving the markets — before you get started."
         />
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           {explore.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="card group flex flex-col p-6"
-            >
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+            <Link key={item.href} href={item.href} className="group block text-center">
+              <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 transition-colors group-hover:bg-indigo-100">
                 {item.icon}
               </div>
-              <h2 className="font-display mt-5 text-lg font-semibold text-slate-900 group-hover:text-indigo-700">
+              <h2 className="font-display mt-5 text-lg font-semibold text-slate-900 transition-colors group-hover:text-indigo-700">
                 {item.title}
               </h2>
-              <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-600">
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">
                 {item.description}
               </p>
-              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600">
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600">
                 Learn more
                 <svg viewBox="0 0 24 24" className="h-4 w-4 transition-transform group-hover:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14m-6-6 6 6-6 6" />

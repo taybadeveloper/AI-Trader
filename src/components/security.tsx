@@ -50,10 +50,10 @@ export default function Security() {
           title="Your funds stay yours. Always."
           description="Security is not a feature at Al-Trader — it is the foundation the entire platform is built on."
         />
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item) => (
-            <div key={item.title} className="card p-6">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+            <div key={item.title} className="text-center lg:text-left">
+              <div className="mx-auto inline-flex h-12 w-12 items-center justify-center rounded-full bg-white text-indigo-600 shadow-sm lg:mx-0">
                 {item.icon}
               </div>
               <h3 className="font-display mt-5 text-base font-semibold text-slate-900">

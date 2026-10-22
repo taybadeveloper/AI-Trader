@@ -11,12 +11,9 @@ export default function ReviewsPreview() {
           title="Traders love Al-Trader"
           description="From first-time traders to experienced investors — here is what the Al-Trader community says."
         />
-        <div className="mt-14 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
           {reviews.slice(0, 3).map((review) => (
-            <figure
-              key={review.name}
-              className="card flex flex-col p-6"
-            >
+            <figure key={review.name} className="flex flex-col items-center text-center">
               <span className="text-amber-400">
                 <Stars />
               </span>
@@ -27,7 +24,7 @@ export default function ReviewsPreview() {
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 font-display text-sm font-bold text-indigo-700">
                   {review.name.charAt(0)}
                 </span>
-                <span>
+                <span className="text-left">
                   <span className="block text-sm font-semibold text-slate-900">
                     {review.name}
                   </span>
