@@ -55,7 +55,7 @@ export default function WhyChoose() {
               alt="Al-Trader AI trading platform dashboard"
               width={3072}
               height={3072}
-              className="relative w-full rounded-2xl border border-slate-200 shadow-xl shadow-indigo-100"
+              className="relative mx-auto w-full max-w-md rounded-2xl border border-slate-200 shadow-xl shadow-indigo-100"
             />
           </div>
         </div>
