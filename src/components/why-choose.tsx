@@ -53,8 +53,8 @@ export default function WhyChoose() {
             <img
               src="/why-choose.webp"
               alt="Al-Trader AI trading platform dashboard"
-              width={1548}
-              height={1016}
+              width={3072}
+              height={3072}
               className="relative w-full rounded-2xl border border-slate-200 shadow-xl shadow-indigo-100"
             />
           </div>
