@@ -127,6 +127,116 @@ export const posts: Post[] = [
       },
     ],
   },
+  {
+    slug: "how-al-trader-ai-signal-engine-works",
+    title: "How the Al-Trader AI Signal Engine Works",
+    description:
+      "Ever wondered what happens between market data and a trade signal? Here is a simple breakdown of the Al-Trader signal engine.",
+    date: "Oct 22, 2026",
+    dateISO: "2026-10-22",
+    readTime: "6 min read",
+    tag: "Signals",
+    blocks: [
+      {
+        p: "Every Al-Trader trade starts with a signal. But what exactly is a signal, and how does the engine decide that now is the right moment to act? Here is the whole journey, in plain English.",
+      },
+      { h2: "Step 1: The market scan" },
+      {
+        p: "The engine watches thousands of instruments across forex, crypto and stocks at once. It tracks price action, volume, momentum and volatility — 24 hours a day, every day.",
+      },
+      { h2: "Step 2: Scoring every opportunity" },
+      {
+        p: "Each instrument is scored by deep-learning models trained on years of market data. The score reflects both the strength of the setup and the level of risk involved.",
+      },
+      { h2: "Step 3: Risk comes first" },
+      {
+        p: "A signal is only issued when the setup clears the risk bar — the right position size, a defined stop-loss and a realistic target are attached before the signal ever reaches you.",
+      },
+      { h2: "Step 4: Execution" },
+      {
+        p: "With automation enabled, Al-Trader places the trade on your connected exchange the moment the signal is confirmed — no delay, no hesitation.",
+      },
+      {
+        p: "Signals are never guarantees. Markets can and do move against any setup. But every Al-Trader signal follows the same disciplined process, trade after trade.",
+      },
+    ],
+  },
+  {
+    slug: "risk-management-basics-every-trader-should-know",
+    title: "Risk Management Basics Every Trader Should Know",
+    description:
+      "Risk management is the difference between a hobby and a career. These are the fundamentals behind every Al-Trader trade.",
+    date: "Oct 29, 2026",
+    dateISO: "2026-10-29",
+    readTime: "6 min read",
+    tag: "Risk Management",
+    blocks: [
+      {
+        p: "Ask professional traders what separates them from the crowd and the answer is rarely 'better predictions'. It is risk management — the unglamorous discipline that keeps accounts alive.",
+      },
+      { h2: "The 1% rule" },
+      {
+        p: "Many professionals risk no more than 1-2% of their account on a single trade. It sounds small, but it means a string of losses cannot wipe you out — and survival is the whole game.",
+      },
+      { h2: "Position sizing" },
+      {
+        p: "The size of each trade should follow from your risk, not your confidence. Al-Trader calculates position size automatically from your balance and chosen risk per trade.",
+      },
+      { h2: "Stop-losses are non-negotiable" },
+      {
+        p: "Every trade needs a predefined exit before it opens. The Al-Trader engine attaches a stop-loss and target to every signal it produces.",
+      },
+      { h2: "Drawdown limits" },
+      {
+        p: "A losing streak can spiral when emotions take over. Setting a daily or weekly drawdown limit — and pausing when it is hit — protects you from yourself.",
+      },
+      { h2: "Diversification" },
+      {
+        p: "Spreading exposure across markets and instruments means no single move dominates your portfolio. The engine scores opportunities across forex, crypto and stocks together.",
+      },
+      {
+        p: "No risk rule removes market risk entirely. But applied consistently, these basics turn trading from gambling into a repeatable process.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-start-trading-with-ai-beginners-roadmap",
+    title: "How to Start Trading with AI: A Beginner's Roadmap",
+    description:
+      "New to trading and curious about AI? Follow this step-by-step roadmap to your first Al-Trader trade.",
+    date: "Nov 5, 2026",
+    dateISO: "2026-11-05",
+    readTime: "7 min read",
+    tag: "Beginner Guide",
+    blocks: [
+      {
+        p: "Starting out can feel overwhelming — exchanges, strategies, signals, risk. This roadmap breaks it into simple steps you can follow today.",
+      },
+      { h2: "1. Learn the language" },
+      {
+        p: "You do not need a finance degree, but a few terms help: a pair is two currencies, a lot is a trade size, a stop-loss closes a losing trade automatically. Our blogs cover the rest.",
+      },
+      { h2: "2. Start with a demo mindset" },
+      {
+        p: "Begin with the smallest plan and a low risk level. Treat your first weeks as practice — the goal is consistency, not hero trades.",
+      },
+      { h2: "3. Create your free Al-Trader account" },
+      {
+        p: "Sign up takes two minutes. Connect your exchange through a read-only API key so you can watch signals flow before enabling automation.",
+      },
+      { h2: "4. Pick a preset strategy" },
+      {
+        p: "Al-Trader ships with preset strategies for different risk appetites. Pick one, set your risk level, and let the engine do the analysis.",
+      },
+      { h2: "5. Review every trade" },
+      {
+        p: "The best learning tool is your own trade history. Every Al-Trader signal is logged — review wins and losses equally, and adjust your risk level as you learn.",
+      },
+      {
+        p: "Trading involves risk, and no roadmap removes it. But starting small, staying disciplined and letting the AI handle the heavy lifting is the smartest first step.",
+      },
+    ],
+  },
 ];
 
 export function getPost(slug: string): Post | undefined {
