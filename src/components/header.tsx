@@ -62,8 +62,8 @@ export default function Header() {
                     aria-haspopup="menu"
                     className={`flex items-center gap-1 rounded-lg px-2.5 py-2 text-sm font-medium transition-colors lg:px-3 ${
                       active
-                        ? "bg-indigo-50 text-indigo-700"
-                        : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700"
+                        ? "bg-indigo-600 text-white"
+                        : "text-slate-600 hover:bg-indigo-600 hover:text-white"
                     }`}
                   >
                     {link.label}
@@ -90,8 +90,8 @@ export default function Header() {
                             href={child.href}
                             className={`block rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
                               childActive
-                                ? "bg-indigo-50 text-indigo-700"
-                                : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700"
+                                ? "bg-indigo-600 text-white"
+                                : "text-slate-600 hover:bg-indigo-600 hover:text-white"
                             }`}
                           >
                             {child.label}
@@ -110,8 +110,8 @@ export default function Header() {
                 aria-current={active ? "page" : undefined}
                 className={`rounded-lg px-2.5 py-2 text-sm font-medium transition-colors lg:px-3 ${
                   active
-                    ? "bg-indigo-50 text-indigo-700"
-                    : "text-slate-600 hover:bg-indigo-50 hover:text-indigo-700"
+                    ? "bg-indigo-600 text-white"
+                    : "text-slate-600 hover:bg-indigo-600 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -165,8 +165,8 @@ export default function Header() {
                             aria-current={childActive ? "page" : undefined}
                             className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
                               childActive
-                                ? "bg-indigo-50 text-indigo-700"
-                                : "text-slate-700 hover:bg-indigo-50 hover:text-indigo-700"
+                                ? "bg-indigo-600 text-white"
+                                : "text-slate-700 hover:bg-indigo-600 hover:text-white"
                             }`}
                           >
                             {child.label}
@@ -185,8 +185,8 @@ export default function Header() {
                   aria-current={active ? "page" : undefined}
                   className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
                     active
-                      ? "bg-indigo-50 text-indigo-700"
-                      : "text-slate-700 hover:bg-indigo-50 hover:text-indigo-700"
+                      ? "bg-indigo-600 text-white"
+                      : "text-slate-700 hover:bg-indigo-600 hover:text-white"
                   }`}
                 >
                   {link.label}
