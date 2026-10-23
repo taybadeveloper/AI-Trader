@@ -44,9 +44,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-700 bg-indigo-50/80 shadow-sm shadow-slate-900/[0.02] backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex items-center gap-0.5" onClick={() => setOpen(false)}>
+        <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Logo className="h-9 w-9" />
-          <span className="font-display text-xl font-bold tracking-tight text-slate-900">
+          <span className="-ml-2.5 font-display text-xl font-bold tracking-tight text-slate-900">
             L<span className="text-indigo-600">-</span>TRADER
           </span>
         </Link>
