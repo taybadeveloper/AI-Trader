@@ -31,7 +31,7 @@ export default function Hero() {
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
               AL-TRADER
             </span>
-            , the AI Trading Platform That Never Sleeps
+            , the Smart Trading Platform That Never Sleeps
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
             Al-Trader scans global markets 24/7, analyzes millions of data points
