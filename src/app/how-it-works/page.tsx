@@ -40,28 +40,45 @@ const requirements = [
 
 const day = [
   {
-    time: "09:00",
     title: "Morning market scan",
     description:
       "The engine reviews overnight moves across all three markets and updates its models for the day ahead.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4" />
+        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+      </svg>
+    ),
   },
   {
-    time: "12:00",
     title: "Signals in real time",
     description:
       "High-probability setups are scored and delivered to your dashboard the moment they appear.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+      </svg>
+    ),
   },
   {
-    time: "18:00",
     title: "Automated execution",
     description:
       "With automation enabled, trades open and close on your exchange without you lifting a finger.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+      </svg>
+    ),
   },
   {
-    time: "03:00",
     title: "While you sleep",
     description:
       "The AI keeps watching the Asia-Pacific and overnight sessions — around the clock, every day.",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </svg>
+    ),
   },
 ];
 
@@ -172,10 +189,10 @@ export default function HowItWorksPage() {
           />
           <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {day.map((slot) => (
-              <div key={slot.time} className="card p-6">
-                <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 font-display text-xs font-bold text-indigo-700">
-                  {slot.time}
-                </span>
+              <div key={slot.title} className="card p-6">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+                  {slot.icon}
+                </div>
                 <h3 className="font-display mt-4 text-lg font-semibold text-slate-900">
                   {slot.title}
                 </h3>
