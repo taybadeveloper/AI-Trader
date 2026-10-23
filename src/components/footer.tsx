@@ -49,7 +49,7 @@ export default function Footer() {
               <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">
                 {column.title}
               </h3>
-              <ul className="mt-4 space-y-2.5">
+              <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
                 {column.links.map((link) => (
                   <li key={link.label}>
                     <Link
