@@ -5,7 +5,6 @@ import Logo from "./logo";
 interface FooterLink {
   href: string;
   label: string;
-  wide?: boolean;
 }
 
 interface FooterColumn {
@@ -15,12 +14,17 @@ interface FooterColumn {
 
 const columns: FooterColumn[] = [
   {
-    title: "Quick Links",
+    title: "Explore",
     links: [
-      { href: "/how-it-works", label: "How It Works", wide: true },
       { href: "/", label: "Home" },
+      { href: "/how-it-works", label: "How It Works" },
       { href: "/invest", label: "Invest" },
       { href: "/market", label: "Market" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
       { href: "/blogs", label: "Blogs" },
       { href: "/news/crypto", label: "News" },
       { href: "/contact", label: "Contact" },
@@ -31,7 +35,7 @@ const columns: FooterColumn[] = [
     links: [
       { href: "/disclaimer", label: "Disclaimer" },
       { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms of Service", wide: true },
+      { href: "/terms", label: "Terms of Service" },
     ],
   },
 ];
@@ -40,7 +44,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-700 bg-indigo-50">
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="grid gap-10 text-center md:grid-cols-4 md:text-left">
+        <div className="grid gap-10 text-center md:grid-cols-5 md:text-left">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center justify-center md:justify-start">
               <Logo className="h-8 w-8" />
@@ -60,9 +64,9 @@ export default function Footer() {
               <h3 className="text-sm font-semibold uppercase tracking-wider text-slate-900">
                 {column.title}
               </h3>
-              <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
+              <ul className="mt-4 space-y-2.5">
                 {column.links.map((link) => (
-                  <li key={link.label} className={link.wide ? "col-span-2" : undefined}>
+                  <li key={link.label}>
                     <Link
                       href={link.href}
                       className="text-sm text-slate-600 transition-colors hover:text-indigo-700"
