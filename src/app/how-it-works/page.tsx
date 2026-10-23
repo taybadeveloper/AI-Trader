@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import FaqList from "@/components/faq-list";
 import { Container, SectionHeading } from "@/components/shared";
 
 export const metadata: Metadata = {
@@ -36,6 +37,33 @@ const requirements = [
   "An internet connection — Al-Trader runs in the cloud",
   "About five minutes of setup time",
   "No trading experience required",
+];
+
+const day = [
+  {
+    time: "09:00",
+    title: "Morning market scan",
+    description:
+      "The engine reviews overnight moves across all three markets and updates its models for the day ahead.",
+  },
+  {
+    time: "12:00",
+    title: "Signals in real time",
+    description:
+      "High-probability setups are scored and delivered to your dashboard the moment they appear.",
+  },
+  {
+    time: "18:00",
+    title: "Automated execution",
+    description:
+      "With automation enabled, trades open and close on your exchange without you lifting a finger.",
+  },
+  {
+    time: "03:00",
+    title: "While you sleep",
+    description:
+      "The AI keeps watching the Asia-Pacific and overnight sessions — around the clock, every day.",
+  },
 ];
 
 export default function HowItWorksPage() {
@@ -91,6 +119,42 @@ export default function HowItWorksPage() {
               ))}
             </ul>
           </div>
+        </Container>
+      </section>
+
+      <section className="bg-slate-50 py-12 lg:py-20">
+        <Container>
+          <SectionHeading
+            eyebrow="A Day with AL-TRADER"
+            title="What your day looks like after setup"
+            description="Once your account is connected, the engine works around the clock — here is how it fits into your day."
+          />
+          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {day.map((slot) => (
+              <div key={slot.time} className="card p-6">
+                <span className="inline-flex rounded-lg bg-indigo-50 px-2.5 py-1 font-display text-xs font-bold text-indigo-700">
+                  {slot.time}
+                </span>
+                <h3 className="font-display mt-4 text-lg font-semibold text-slate-900">
+                  {slot.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                  {slot.description}
+                </p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-white py-12 lg:py-20">
+        <Container>
+          <SectionHeading
+            eyebrow="FAQs"
+            title="Frequently asked questions"
+            description="Everything you need to know about getting started with Al-Trader."
+          />
+          <FaqList />
         </Container>
       </section>
     </>
