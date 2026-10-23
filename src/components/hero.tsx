@@ -29,7 +29,7 @@ export default function Hero() {
           <h1 className="font-display mt-5 text-balance text-4xl font-semibold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
             Trade Smarter with{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
-              Al-Trader
+              AL-TRADER
             </span>
             , the AI Trading Platform That Never Sleeps
           </h1>

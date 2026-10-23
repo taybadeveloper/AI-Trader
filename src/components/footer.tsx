@@ -34,7 +34,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center justify-center gap-2.5 md:justify-start">
               <Logo className="h-9 w-9" />
               <span className="font-display text-xl font-bold tracking-tight text-slate-900">
-                Al<span className="text-indigo-600">-</span>Trader
+                AL<span className="text-indigo-600">-</span>TRADER
               </span>
             </Link>
             <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-slate-600 md:mx-0">
