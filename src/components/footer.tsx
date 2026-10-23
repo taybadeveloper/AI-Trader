@@ -2,12 +2,23 @@ import Link from "next/link";
 import CurrentYear from "./current-year";
 import Logo from "./logo";
 
-const columns = [
+interface FooterLink {
+  href: string;
+  label: string;
+  wide?: boolean;
+}
+
+interface FooterColumn {
+  title: string;
+  links: FooterLink[];
+}
+
+const columns: FooterColumn[] = [
   {
     title: "Quick Links",
     links: [
+      { href: "/how-it-works", label: "How It Works", wide: true },
       { href: "/", label: "Home" },
-      { href: "/how-it-works", label: "How It Works" },
       { href: "/invest", label: "Invest" },
       { href: "/market", label: "Market" },
       { href: "/blogs", label: "Blogs" },
@@ -20,7 +31,7 @@ const columns = [
     links: [
       { href: "/disclaimer", label: "Disclaimer" },
       { href: "/privacy", label: "Privacy Policy" },
-      { href: "/terms", label: "Terms of Service" },
+      { href: "/terms", label: "Terms of Service", wide: true },
     ],
   },
 ];
@@ -51,7 +62,7 @@ export default function Footer() {
               </h3>
               <ul className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5">
                 {column.links.map((link) => (
-                  <li key={link.label}>
+                  <li key={link.label} className={link.wide ? "col-span-2" : undefined}>
                     <Link
                       href={link.href}
                       className="text-sm text-slate-600 transition-colors hover:text-indigo-700"
