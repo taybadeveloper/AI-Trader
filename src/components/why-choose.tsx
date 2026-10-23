@@ -33,13 +33,13 @@ export default function WhyChoose() {
               hesitation with disciplined execution. Here is why thousands of
               traders have made the switch.
             </p>
-            <ul className="mt-8 space-y-3.5">
+            <ul className="mx-auto mt-8 w-fit space-y-3.5 text-left lg:mx-0">
               {benefits.map((benefit) => (
-                <li key={benefit} className="flex items-start justify-center gap-3 text-sm text-slate-700 lg:justify-start">
+                <li key={benefit} className="flex items-start gap-3 text-sm text-slate-700">
                   <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m4 12 5 5L20 6" />
                   </svg>
-                  {benefit}
+                  <span>{benefit}</span>
                 </li>
               ))}
             </ul>
