@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import FaqList from "@/components/faq-list";
 import { Container, SectionHeading } from "@/components/shared";
 
 export const metadata: Metadata = {
@@ -64,6 +63,48 @@ const day = [
     description:
       "The AI keeps watching the Asia-Pacific and overnight sessions — around the clock, every day.",
   },
+];
+
+const pipeline = [
+  {
+    title: "Data collection",
+    description:
+      "Price feeds, volume and market structure stream in from every connected exchange — thousands of instruments at once.",
+  },
+  {
+    title: "AI analysis",
+    description:
+      "Deep-learning models score every instrument for probability and risk, using years of market history as context.",
+  },
+  {
+    title: "Risk check",
+    description:
+      "Position size, stop-loss and target are calculated before any signal is released — risk is never an afterthought.",
+  },
+  {
+    title: "Execution",
+    description:
+      "With automation enabled, the trade is placed on your exchange in milliseconds — no hesitation, no missed entries.",
+  },
+  {
+    title: "Reporting",
+    description:
+      "Every trade is logged with its reasoning. Review wins and losses anytime from your dashboard.",
+  },
+];
+
+const before = [
+  "Hours of chart watching every day",
+  "Trades missed while you sleep",
+  "Emotion-driven decisions",
+  "Risk rules skipped under stress",
+];
+
+const after = [
+  "Markets watched 24/7 for you",
+  "Signals and execution around the clock",
+  "Data-driven, rule-based trading",
+  "Risk controls on every single trade",
 ];
 
 export default function HowItWorksPage() {
@@ -150,11 +191,69 @@ export default function HowItWorksPage() {
       <section className="bg-white py-12 lg:py-20">
         <Container>
           <SectionHeading
-            eyebrow="FAQs"
-            title="Frequently asked questions"
-            description="Everything you need to know about getting started with Al-Trader."
+            eyebrow="Behind the Scenes"
+            title="How a trade happens, step by step"
+            description="Between market data and your dashboard, the Al-Trader engine runs a five-step pipeline — automatically, on every signal."
           />
-          <FaqList />
+          <div className="mx-auto mt-12 max-w-3xl space-y-10">
+            {pipeline.map((step, index) => (
+              <div key={step.title} className="flex items-start gap-5">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-indigo-600 font-display text-base font-bold text-white shadow-md shadow-indigo-200">
+                  {index + 1}
+                </span>
+                <div>
+                  <h3 className="font-display text-lg font-semibold text-slate-900">
+                    {step.title}
+                  </h3>
+                  <p className="mt-1.5 text-sm leading-relaxed text-slate-600">
+                    {step.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="bg-slate-50 py-12 lg:py-20">
+        <Container>
+          <SectionHeading
+            eyebrow="The Difference"
+            title="Before vs after AL-TRADER"
+            description="The same trader, the same markets — a completely different experience."
+          />
+          <div className="mx-auto mt-12 grid max-w-3xl gap-10 md:grid-cols-2 md:gap-0 md:divide-x md:divide-slate-200">
+            <div className="md:px-8 md:first:pl-0">
+              <p className="font-display text-xs font-semibold uppercase tracking-widest text-slate-400">
+                Before
+              </p>
+              <ul className="mt-6 space-y-4">
+                {before.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm text-slate-600">
+                    <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-rose-400" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="M6 6l12 12M18 6L6 18" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="md:px-8 md:last:pr-0">
+              <p className="font-display text-xs font-semibold uppercase tracking-widest text-indigo-600">
+                After AL-TRADER
+              </p>
+              <ul className="mt-6 space-y-4">
+                {after.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-sm font-medium text-slate-900">
+                    <svg viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0 text-emerald-500" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <path d="m4 12 5 5L20 6" />
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </Container>
       </section>
     </>
