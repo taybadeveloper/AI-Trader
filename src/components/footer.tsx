@@ -80,7 +80,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <p className="mt-12 border-t border-slate-200 pt-8 text-center text-xs leading-relaxed text-slate-500 md:text-left">
+        <p className="mt-7 border-t border-slate-200 pt-6 text-center text-xs leading-relaxed text-slate-500 md:text-left">
           Trading foreign exchange, cryptocurrencies and other financial
           instruments carries a high level of risk and may not be suitable for
           all investors. Al-Trader provides technology only and does not provide
