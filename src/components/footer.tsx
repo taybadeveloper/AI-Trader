@@ -32,7 +32,7 @@ export default function Footer() {
         <div className="grid gap-10 text-center md:grid-cols-4 md:text-left">
           <div className="md:col-span-2">
             <Link href="/" className="flex items-center justify-center md:justify-start">
-              <Logo className="h-9 w-9" />
+              <Logo className="h-8 w-8" />
               <span className="-ml-2.5 font-display text-xl font-bold tracking-tight text-slate-900">
                 L<span className="text-indigo-600">-</span>TRADER
               </span>
