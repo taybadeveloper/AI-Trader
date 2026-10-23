@@ -2,9 +2,8 @@
   <rect width="1200" height="630" fill="#ffffff"/>
   <circle cx="1060" cy="90" r="260" fill="#e0e7ff"/>
   <circle cx="140" cy="590" r="230" fill="#ecfdf5"/>
-  <rect x="80" y="80" width="120" height="120" rx="28" fill="#4f46e5"/>
-  <circle cx="144" cy="98" r="7" fill="#34d399" stroke="#ffffff" stroke-width="3"/>
-  <path d="M112 176 L144 108 L176 176 L161 176 L144 142 L127 176 Z" fill="#ffffff" fill-rule="evenodd"/>
+  <path d="M112 176 L144 108 L176 176 L161 176 L144 142 L127 176 Z" fill="#4f46e5" fill-rule="evenodd"/>
+  <text x="216" y="162" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" fill="#0f172a">L-TRADER</text>
   <text x="80" y="318" font-family="Arial, Helvetica, sans-serif" font-size="96" font-weight="700" fill="#0f172a">Al-Trader</text>
   <text x="82" y="382" font-family="Arial, Helvetica, sans-serif" font-size="34" fill="#475569">AI-Powered Trading Platform — Trade Smarter with AI</text>
   <rect x="82" y="432" width="300" height="64" rx="32" fill="#4f46e5"/>

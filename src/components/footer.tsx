@@ -31,10 +31,10 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
         <div className="grid gap-10 text-center md:grid-cols-4 md:text-left">
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center justify-center gap-2.5 md:justify-start">
-              <Logo className="h-9 w-9" />
+            <Link href="/" className="flex items-center justify-center gap-1.5 md:justify-start">
+              <Logo className="h-8 w-8" />
               <span className="font-display text-xl font-bold tracking-tight text-slate-900">
-                AL<span className="text-indigo-600">-</span>TRADER
+                L<span className="text-indigo-600">-</span>TRADER
               </span>
             </Link>
             <p className="mx-auto mt-4 max-w-sm text-sm leading-relaxed text-slate-600 md:mx-0">
